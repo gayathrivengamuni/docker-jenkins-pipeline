@@ -33,7 +33,7 @@ post{
             body: "CiCd pipeline"
         }
 }
-
+stage
 steps {
   emailext body: "*${currentBuild.currentResult}:* Job Name: 
             ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER} More 
